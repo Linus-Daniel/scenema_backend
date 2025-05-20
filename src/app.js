@@ -9,6 +9,8 @@ const { initializeSocket } = require('./config/socket');
 
 const app = express();
 
+
+
 // Middleware
 app.use(cors({
   origin: "https://scenema.vercel.app",
