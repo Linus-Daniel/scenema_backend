@@ -160,6 +160,7 @@ exports.getAllUserRooms = async (req, res) => {
     try {
       const userId = req.user.id;
       const { roomId } = req.params;
+      console.log(roomId)
   
       // Find the room by your custom roomId field
       const room = await Room.findOne({ roomId });

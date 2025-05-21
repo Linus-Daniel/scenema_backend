@@ -13,7 +13,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://scenema.vercel.app",
+  origin: "http://localhost:3000",
   credentials: true
 }));
 app.use(helmet());
