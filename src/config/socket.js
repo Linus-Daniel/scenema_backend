@@ -9,7 +9,7 @@ const Message = require('../models/Message');
 const initializeSocket = (server) => {
   const io = socketio(server, {
     cors: {
-      origin:"http://localhost:3000",
+      origin:"https://scenema.vercel.app/",
       credentials: true,
       methods: ['GET', 'POST'],
     },
